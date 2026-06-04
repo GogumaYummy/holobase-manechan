@@ -14,6 +14,9 @@ importers:
       '@sapphire/eslint-config':
         specifier: ^5.0.6
         version: 5.0.6
+      '@sapphire/prettier-config':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@sapphire/ts-config':
         specifier: ^5.0.3
         version: 5.0.3
@@ -23,6 +26,9 @@ importers:
       eslint:
         specifier: ^10.4.1
         version: 10.4.1
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -118,6 +124,10 @@ packages:
 
   '@sapphire/eslint-config@5.0.6':
     resolution: {integrity: sha512-0W5V5+HoUpgjjh+8XL3VwDCk45jDuSIAzH1bf9ZOREDS9XEUwV6WSX/P5yd/qwDC+k8h0vCqXyZ55ndqk2ngOw==}
+    engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
+
+  '@sapphire/prettier-config@2.0.0':
+    resolution: {integrity: sha512-Vie8KR5zQ6sbEP4+biW/IR7k55saGfZkTSuRlgvxCBKb4SBJdRWcOBI80i+JxMVIDDZKgXlgYnXEST+FgZiWXA==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
   '@sapphire/ts-config@5.0.3':
@@ -819,7 +829,7 @@ snapshots:
 
   '@sapphire/eslint-config@5.0.6':
     dependencies:
-      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)
+      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@10.4.1)(typescript@6.0.3))(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.4.5)
       eslint: 8.57.1
       eslint-config-prettier: 10.1.8(eslint@8.57.1)
@@ -829,6 +839,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/eslint'
       - supports-color
+
+  '@sapphire/prettier-config@2.0.0':
+    dependencies:
+      prettier: 3.8.3
 
   '@sapphire/ts-config@5.0.3':
     dependencies:
@@ -845,7 +859,7 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)':
+  '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@10.4.1)(typescript@6.0.3))(eslint@8.57.1)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
       '@typescript-eslint/parser': 7.18.0(eslint@8.57.1)(typescript@5.4.5)
