@@ -6,6 +6,7 @@ dist/
 
 # 로그 파일
 *.log
+logs/
 
 # 환경 변수 파일
 .env
